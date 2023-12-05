@@ -1,11 +1,13 @@
 import React from 'react'
 import CoinItem from './CoinItem'
+import './Coins.css'
 
 const Coins = (props) => {
   return (
     <div className='container'>
+        <h2 className='title'>Top <span>10</span> in Market</h2>
         <div className='heading'>
-            <p>#</p>
+            <p>Rank</p>
             <p className='coin-name'>Coin</p>
             <p>Price</p>
             <p>24h</p>
@@ -14,7 +16,7 @@ const Coins = (props) => {
         </div>
         {props.coins.map(coins => {
             return (
-                <CoinItem coins={coins} />
+                <CoinItem coins={coins} key={coins.id} />
             )
         })}
     </div>

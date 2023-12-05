@@ -1,0 +1,23 @@
+/* CSS for main heading */
+
+.navBar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 5vh;
+    padding-left: 3vw;
+    border-radius: 8px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #fff;
+}
+.icon{
+    font-size: 3rem;
+    color: #164df2;
+    padding-right: 1px;
+}
+.blue{
+    color: #164df2;
+}

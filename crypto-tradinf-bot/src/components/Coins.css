@@ -1,0 +1,65 @@
+.container{
+    width: 75vw;
+    margin: 8vh auto 0;
+    padding: 1rem 0 2rem 0;
+    border: 2px solid #486cd9;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 12px #486cd9;
+    background-color: #fff;
+    text-align: center;
+}
+.title{
+    margin: 0 auto 1rem;
+}
+.title span{
+    color: #164df2;
+}
+.heading{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px #b1b1b1;
+    border-radius: 8px;
+    padding: 0.7rem 1rem;
+    margin: 0 auto 1rem;
+}
+.heading p{
+    width: 100%;
+}
+.coin-name{
+    margin-left: -4rem;
+}
+.coin-row{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 10px #b1b1b1;
+    border-radius: 8px;
+    padding: 0.7rem 1rem;
+    margin: 0 auto 1rem;
+}
+.coin-row p{
+    width: 100%;
+}
+.coin-row .symbol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -4rem;
+    width: 100%;
+}
+.coin-row:hover{
+    transform: scale(1.04);
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+.coin-row .symbol img{
+    width: 1.5vw;
+    min-width: 1.5rem;
+}
+.coin-row .symbol p{
+    width: 2rem;
+}
