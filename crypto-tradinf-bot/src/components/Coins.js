@@ -1,11 +1,11 @@
-import React from 'react'
+import React, {useState} from 'react'
 import CoinItem from './CoinItem'
 import './Coins.css'
 
 const Coins = (props) => {
   return (
     <div className='container'>
-        <h2 className='title'>Top <span>10</span> in Market</h2>
+        <h2 className='title'>Top <span>10 Coins</span> in Market</h2>
         <div className='heading'>
             <p>Rank</p>
             <p className='coin-name'>Coin</p>

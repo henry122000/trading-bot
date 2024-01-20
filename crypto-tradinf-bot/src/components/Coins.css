@@ -1,6 +1,6 @@
 .container{
     width: 75vw;
-    margin: 8vh auto 0;
+    margin: 15vh auto 2rem;
     padding: 1rem 0 2rem 0;
     border: 2px solid #486cd9;
     border-radius: 1rem;
@@ -55,6 +55,8 @@
     transform: scale(1.04);
     transition: .3s ease-in-out;
     cursor: pointer;
+    color: #164df2;
+    font-weight: bold;
 }
 .coin-row .symbol img{
     width: 1.5vw;
@@ -62,4 +64,5 @@
 }
 .coin-row .symbol p{
     width: 2rem;
+    padding-left: .3rem;
 }
