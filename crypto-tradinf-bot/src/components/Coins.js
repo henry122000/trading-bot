@@ -1,10 +1,11 @@
-import React, {useState} from 'react'
+import React from 'react'
 import CoinItem from './CoinItem'
 import './Coins.css'
 
 const Coins = (props) => {
   return (
-    <div className='container'>
+    <section id='market'>
+      <div className='container'>
         <h2 className='title'>Top <span>10 Coins</span> in Market</h2>
         <div className='heading'>
             <p>Rank</p>
@@ -19,7 +20,8 @@ const Coins = (props) => {
                 <CoinItem coins={coins} key={coins.id} />
             )
         })}
-    </div>
+      </div>
+    </section>
   )
 }
 

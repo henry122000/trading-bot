@@ -1,19 +1,24 @@
-import React, { useState, useEffect } from 'react'
+import React, {useEffect } from 'react'
 import './Background.css';
 
 const Background = () => {
-    const [offsetY, setOffsetY] = useState(0);
-    const handleScroll = () => setOffsetY(window.pageYOffset);
-
     useEffect(() => {
+        const handleScroll = () => {
+          const scrollPosition = window.scrollY;
+          const backgroundPosition = `center ${scrollPosition * 0.5}px`;
+          document.body.style.backgroundPosition = backgroundPosition;
+        };
+    
         window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
+    
+        return () => {
+          window.removeEventListener('scroll', handleScroll);
+        };
     }, []);
 
     return (
         <div
             className="background"
-            style={{ transform: `translateY(-${offsetY * 0.5}px)` }}
         >
 
         </div>

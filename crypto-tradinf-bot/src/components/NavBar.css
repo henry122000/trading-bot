@@ -6,12 +6,11 @@
     left: 0;
     width: 100vw;
     height: 5vh;
-    min-height: 54px;
     padding: 3.5vh 3vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color:  rgba(50, 50, 50, 0.7);
+    background-color:  rgba(0, 0, 50, 0.7);
     color: #fff;
 }
 
@@ -57,5 +56,5 @@
 
 .nav-links a:hover {
     color: #fff; 
-    transform: scale(1.15);
+    transform: scale(1.2);
 }

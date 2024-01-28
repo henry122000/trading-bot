@@ -3,6 +3,7 @@ import axios from 'axios'
 import Coins from "./components/Coins";
 import NavBar from "./components/NavBar";
 import Background from './components/Background';
+import HomePage from './components/HomePage';
 function App() {
   const [coins, setCoins] = useState([])
 
@@ -22,6 +23,7 @@ function App() {
     <>
       <Background />
       <NavBar />
+      <HomePage />
       <Coins coins={coins} />
     </>
   );
